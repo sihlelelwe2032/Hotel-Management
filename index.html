@@ -5,10 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Management System</title>
     <link rel="stylesheet" href="styles.css">
+<style>   
+    * {
+        box-sizing: border-box;
+    }
+        
+    body {
+        font-family: Arial;
+        font-size: 17px;
+    }
+        
+    .container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+        
+    .container img {vertical-align: middle;}
+        
+    .container .content {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+    }
+</style>
+    
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Hotel</h1>
+        <h1>Welcome to Hilton Garden Inn Hotel</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,10 +50,15 @@
     </header>
 
     <section id="home">
-        <h2>Our Services</h2>
-        <p>Experience luxury and comfort at our hotel.</p>
+        <h2>Experience luxury and comfort at our hotel.</h2>
     </section>
-
+    <div class="container">
+      <img src="hilton.jpg" alt="Hilton" style="width:100%;">
+      <div class="content">
+        <h1>Hilton Garden Inn</h1>
+        <p>Press, pause on the chaos and treat yourself to pure relaxation. Stay in because your escape is right here. Book your stay at Hilton Garden Inn today!</p>
+      </div>
+    </div>
     <footer>
         <p>&copy; 2024 Hotel Management System</p>
     </footer>
