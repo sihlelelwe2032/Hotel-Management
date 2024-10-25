@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Payment Management</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="guests.html">Guests</a></li>
+                <li><a href="payments.html">Payments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Process Payment</h2>
+        <form id="paymentForm">
+            <label for="reservationId">Reservation ID:</label>
+            <input type="text" id="reservationId" required>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" required>
+            <button type="submit">Process Payment</button>
+        </form>
+        <div id="paymentList"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
